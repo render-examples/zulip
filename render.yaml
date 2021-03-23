@@ -56,6 +56,7 @@ services:
   env: docker
   plan: standard plus
   # We use a fork of docker-zulip with 2 changes (ubuntu 18.04 -> 20.04 and setting SETTING_EXTERNAL_HOST to default to the onrender.com domain provided by render)
+  # Upstream PR here: https://github.com/zulip/docker-zulip/pull/290
   repo: https://github.com/renderinc/docker-zulip.git
   disk:
     name: zulip-persistent-storage
@@ -74,7 +75,7 @@ services:
     - key: SECRETS_email_password
       sync: false # (for production) set to the SMTP server password in the dashboard
     - key: SETTING_EMAIL_USE_SSL
-      value: False # (for production) false since TLS replaces SSL; SETTING_EMAIL_USE_SSL is set to true
+      value: False # (for production) False since TLS replaces SSL; SETTING_EMAIL_USE_TLS is set to True
     - key: SETTING_EMAIL_USE_TLS
       value: True
     - key: ZULIP_AUTH_BACKENDS
