@@ -17,3 +17,7 @@ The following components will be created:
 Fork this repo and click the button below to deploy.
 
 [![Deploy to Render](http://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/render-examples/zulip)
+
+More details at https://render.com/docs/deploy-zulip.
+
+If you need help, get in touch at https://community.render.com.
