@@ -5,7 +5,7 @@ This is a sample [Zulip](https://zulip.com/) app, configured for deployment to [
 The code in this repository will create the following components on Render:
 
 - Zulip web/application server which contains:
-  - Nginx: front-end web server that serves static assets and proxies to Django and Tornado
+  - NGINX: frontend web server that serves static assets and proxies to Django and Tornado
   - Django: main web application server
   - Tornado: asynchronous server for maintaining persistent client connections
   - Supervisor: Monitors and maintains all server processes
