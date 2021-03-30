@@ -7,7 +7,7 @@ The following components will be created:
 - Zulip web/application server which contains:
   - Nginx: front-end web server that serves static assets and proxies to Django and Tornado
   - Django: main web application server
-  - Tornado: asynchronous server for maintaining persistent connection from every running client
+  - Tornado: asynchronous server for maintaining persistent client connections
   - Supervisor: Monitors and maintains all server processes
 - Memcached instance: used to cache database model objects
 - Redis instance: used for short-term data stores
