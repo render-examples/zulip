@@ -65,7 +65,7 @@ services:
     - key: SETTING_EXTERNAL_HOST
       sync: false # the hostname your users will use to connect to your Zulip server. this defaults to the onrender.com domain given to you by Render
     - key: SETTING_ZULIP_ADMINISTRATOR
-      sync: false # (required) initial admin email for setup, set to your personal email
+      sync: false # (required) initial admin email for setup; set to your personal email address
     - key: SETTING_EMAIL_HOST
       sync: false  # (for production) set to a valid SMTP server host in the dashboard
     - key: SETTING_EMAIL_HOST_USER #TODO
