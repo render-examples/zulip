@@ -10,7 +10,7 @@ The following components will be created:
   - Tornado: asynchronous server for maintaining persistent client connections
   - Supervisor: Monitors and maintains all server processes
 - Memcached instance: used to cache database model objects
-- Redis instance: used for short-term data stores
+- Redis instance: used as a temporary data store
 - RabbitMQ instance: used as a queuing system and to communicate between Django and Tornado
 - PostgreSQL instance: used to store all persistent data
 
