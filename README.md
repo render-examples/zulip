@@ -2,7 +2,7 @@
 
 This is a sample [Zulip](https://zulip.com/) app, configured for deployment to [Render](https://render.com/). Zulip is an open-source real-time chat application with an email threading model. 
 
-The following components will be created:
+The code in this repository will create the following components on Render:
 
 - Zulip web/application server which contains:
   - Nginx: front-end web server that serves static assets and proxies to Django and Tornado
