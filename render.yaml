@@ -55,9 +55,7 @@ services:
   name: zulip
   env: docker
   plan: standard plus
-  # We use a fork of docker-zulip with 2 changes (ubuntu 18.04 -> 20.04 and setting SETTING_EXTERNAL_HOST to default to the onrender.com domain provided by Render)
-  # Upstream PR here: https://github.com/zulip/docker-zulip/pull/290
-  repo: https://github.com/renderinc/docker-zulip.git
+  dockerfilePath: ./docker-zulip/Dockerfile
   disk:
     name: zulip-persistent-storage
     mountPath: /data
