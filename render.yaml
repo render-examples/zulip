@@ -54,7 +54,7 @@ services:
 - type: web
   name: zulip
   env: docker
-  plan: standard plus
+  plan: starter plus
   dockerfilePath: ./docker-zulip/Dockerfile
   disk:
     name: zulip-persistent-storage
@@ -76,6 +76,8 @@ services:
       value: False # (for production) False since TLS replaces SSL; SETTING_EMAIL_USE_TLS is set to True
     - key: SETTING_EMAIL_USE_TLS
       value: True
+    - key: QUEUE_WORKERS_MULTIPROCESS
+      value: False # set to True if Zulip plan is standard plus or greater
     - key: ZULIP_AUTH_BACKENDS
       value: 'EmailAuthBackend' # Zulip supports other authentication methods https://zulip.readthedocs.io/en/latest/production/authentication-methods.html
     - key: SECRETS_secret_key
