@@ -4,6 +4,7 @@ services:
   env: docker
   dockerfilePath: ./redis/Dockerfile
   dockerContext: ./redis
+  autoDeploy: false
   envVars:
     - key: REDIS_PASSWORD
       generateValue: true    
@@ -15,6 +16,7 @@ services:
   name: zulip-memcached
   env: docker
   dockerfilePath: ./memcached/Dockerfile
+  autoDeploy: false
   envVars:
     - key: SASL_CONF_PATH
       value: /home/memcache/memcached.conf
@@ -26,6 +28,7 @@ services:
   name: zulip-rabbitmq
   env: docker
   repo: https://github.com/render-examples/rabbitmq.git
+  autoDeploy: false
   envVars:
     - key: RABBITMQ_ERLANG_COOKIE
       generateValue: true
@@ -41,6 +44,7 @@ services:
   name: zulip-postgresql
   env: docker
   dockerfilePath: ./postgresql/Dockerfile
+  autoDeploy: false
   envVars:
     - key: POSTGRES_DB
       value: zulip # Must be set to zulip
@@ -56,6 +60,7 @@ services:
   env: docker
   plan: starter plus
   dockerfilePath: ./docker-zulip/Dockerfile
+  autoDeploy: false
   disk:
     name: zulip-persistent-storage
     mountPath: /data
