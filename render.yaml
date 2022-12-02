@@ -82,7 +82,7 @@ services:
     - key: SETTING_EMAIL_USE_TLS
       value: True
     - key: QUEUE_WORKERS_MULTIPROCESS
-      value: False # set to True if Zulip plan is standard plus or greater
+      value: False # set to True if Zulip plan is pro or greater
     - key: ZULIP_AUTH_BACKENDS
       value: 'EmailAuthBackend' # Zulip supports other authentication methods https://zulip.readthedocs.io/en/latest/production/authentication-methods.html
     - key: SECRETS_secret_key
