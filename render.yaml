@@ -58,7 +58,7 @@ services:
 - type: web
   name: zulip
   env: docker
-  plan: starter plus
+  plan: standard
   dockerfilePath: ./docker-zulip/Dockerfile
   autoDeploy: false
   disk:
